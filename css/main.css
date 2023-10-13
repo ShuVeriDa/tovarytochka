@@ -7,24 +7,3 @@ main {
     box-sizing: border-box;
     gap: 32px;
 }
-
-.main_cart {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 891px;
-    height: 100%;
-    max-height: 1809px;
-    gap: 27px;
-}
-
-.main_cart_title {
-    width: 100%;
-    max-width: 114px;
-    height: 36px;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 36px;
-    color: #000;
-    /*letter-spacing: -1%;*/
-}

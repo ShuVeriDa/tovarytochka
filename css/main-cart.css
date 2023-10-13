@@ -1,0 +1,71 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 891px;
+    height: 100%;
+    max-height: 1809px;
+    gap: 27px;
+}
+
+.cart_header h1 {
+    width: 100%;
+    max-width: 114px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000;
+    /*letter-spacing: -1%;*/
+}
+
+.cart_main {
+    width: 100%;
+    max-width: 891px;
+    height: 1809px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.in_stock_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 891px;
+}
+
+.choose_all {
+    display: flex;
+    gap: 14px;
+    width: inherit;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .custom-checkbox-icon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-checkbox-icon .unchecked {
+    display: none;
+}
+
+.custom-checkbox .custom-checkbox-icon .checked {
+    display: none;
+}
+
+.custom-checkbox input:checked + .custom-checkbox-icon .checked {
+    display: block;
+}
+
+.custom-checkbox input:not(:checked) + .custom-checkbox-icon .unchecked {
+    display: block;
+    fill: black;
+    fill-opacity: 0.2;
+}
