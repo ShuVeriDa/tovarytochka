@@ -1,4 +1,24 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/Segoe UI.ttf') format('woff'),
+    url('../fonts/Segoe UI Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    font-family: 'Segoe Ui', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;

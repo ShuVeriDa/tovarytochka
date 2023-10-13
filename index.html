@@ -4,99 +4,265 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Товары и точка</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-<header>
-    <div class="container">
-        <div class="menu-and-logo">
-            <div class="menu">
-                <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 2C0 0.895431 0.895431 0 2 0H26C27.1046 0 28 0.895431 28 2C28 3.10457 27.1046 4 26 4H2C0.895431 4 0 3.10457 0 2Z"
-                          fill="white"/>
-                    <path d="M0 12C0 10.8954 0.895431 10 2 10H26C27.1046 10 28 10.8954 28 12C28 13.1046 27.1046 14 26 14H2C0.895431 14 0 13.1046 0 12Z"
-                          fill="white"/>
-                    <path d="M0 22C0 20.8954 0.895431 20 2 20H26C27.1046 20 28 20.8954 28 22C28 23.1046 27.1046 24 26 24H2C0.895431 24 0 23.1046 0 22Z"
-                          fill="white"/>
-                </svg>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="menu-and-logo">
+                <div class="menu">
+                    <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2C0 0.895431 0.895431 0 2 0H26C27.1046 0 28 0.895431 28 2C28 3.10457 27.1046 4 26 4H2C0.895431 4 0 3.10457 0 2Z"
+                              fill="white"/>
+                        <path d="M0 12C0 10.8954 0.895431 10 2 10H26C27.1046 10 28 10.8954 28 12C28 13.1046 27.1046 14 26 14H2C0.895431 14 0 13.1046 0 12Z"
+                              fill="white"/>
+                        <path d="M0 22C0 20.8954 0.895431 20 2 20H26C27.1046 20 28 20.8954 28 22C28 23.1046 27.1046 24 26 24H2C0.895431 24 0 23.1046 0 22Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <div class="logo">
+                    <span>ТОВАРЫ И ТОЧКА</span>
+                </div>
             </div>
-            <div class="logo">
-                <span>ТОВАРЫ <br> И ТОЧКА</span>
+            <div class="search">
+                <div class="container">
+                    <div class="input">
+                        <label>
+                            <input type="text" placeholder="Я ищу..."/>
+                        </label>
+                    </div>
+                    <div class="search-logo">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M8.93382 1.70286C5.44752 1.70286 2.62132 4.52907 2.62132 8.01536C2.62132 11.5017 5.44752 14.3279 8.93382 14.3279C12.4201 14.3279 15.2463 11.5017 15.2463 8.01536C15.2463 4.52907 12.4201 1.70286 8.93382 1.70286ZM0.937988 8.01536C0.937988 3.59939 4.51784 0.0195312 8.93382 0.0195312C13.3498 0.0195313 16.9296 3.59939 16.9296 8.01536C16.9296 12.4313 13.3498 16.0112 8.93382 16.0112C4.51784 16.0112 0.937988 12.4313 0.937988 8.01536Z"
+                                  fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M12.9602 12.8988C13.2846 12.5659 13.8175 12.559 14.1504 12.8834L20.1959 18.7751C20.5288 19.0995 20.5357 19.6324 20.2112 19.9653C19.8868 20.2982 19.3539 20.3051 19.021 19.9806L12.9756 14.089C12.6427 13.7645 12.6358 13.2317 12.9602 12.8988Z"
+                                  fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+            <div class="profile_and_cart">
+                <div class="profile">
+                    <div class="profile_inner">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M14.5207 5.28873C14.5207 8.05869 12.4361 10.2066 10.006 10.2066C7.57586 10.2066 5.49117 8.05869 5.49117 5.31221C5.47931 2.60094 7.58777 0.5 10.006 0.5C12.4241 0.5 14.5207 2.55399 14.5207 5.28873ZM0.5 18.9977C0.5 19.9836 1.14326 20.5 2.94201 20.5H17.058C18.8567 20.5 19.5 19.9836 19.5 18.9977C19.5 16.1338 15.8429 12.1901 10.006 12.1901C4.15705 12.1901 0.5 16.1338 0.5 18.9977Z"
+                                  fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="profile_title">
+                        Профиль
+                    </div>
+                </div>
+                <div class="header_cart">
+                    <div class="header_cart_inner">
+                        <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M10.2214 15.4665C10.3829 15.9206 10.8452 16.1949 11.3212 16.119L24.0874 14.0828C24.5004 14.017 24.8288 13.701 24.9106 13.2909L26.2654 6.49865C26.3875 5.88644 25.925 5.31324 25.3008 5.30317L7.94122 5.02324C7.24354 5.01199 6.74913 5.70067 6.98289 6.35812L10.2214 15.4665Z"
+                                  fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M10.8262 23.3593C12.1109 23.3593 13.1523 22.3178 13.1523 21.0331C13.1523 19.7484 12.1109 18.707 10.8262 18.707C9.54146 18.707 8.5 19.7484 8.5 21.0331C8.5 22.3178 9.54146 23.3593 10.8262 23.3593Z"
+                                  fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M22.457 23.3593C23.7417 23.3593 24.7831 22.3178 24.7831 21.0331C24.7831 19.7484 23.7417 18.707 22.457 18.707C21.1723 18.707 20.1308 19.7484 20.1308 21.0331C20.1308 22.3178 21.1723 23.3593 22.457 23.3593Z"
+                                  fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M4 2C5.933 2 7.5 1.77614 7.5 1.5C7.5 1.22386 5.933 1 4 1C2.067 1 0.5 1.22386 0.5 1.5C0.5 1.77614 2.067 2 4 2Z"
+                                  fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M1.45442 0.651472C2.1177 0.556717 3.01745 0.5 4 0.5C4.98255 0.5 5.8823 0.556717 6.54558 0.651472C6.87345 0.69831 7.16489 0.757343 7.38495 0.831667C7.4917 0.867722 7.61185 0.917169 7.71511 0.989256C7.80017 1.04864 8 1.21275 8 1.5C8 1.78725 7.80017 1.95136 7.71511 2.01074C7.61185 2.08283 7.4917 2.13228 7.38495 2.16833C7.16489 2.24266 6.87345 2.30169 6.54558 2.34853C5.8823 2.44328 4.98255 2.5 4 2.5C3.01745 2.5 2.1177 2.44328 1.45442 2.34853C1.12655 2.30169 0.835108 2.24266 0.615051 2.16833C0.508302 2.13228 0.388151 2.08283 0.284892 2.01074C0.199835 1.95136 0 1.78725 0 1.5C0 1.21275 0.199835 1.04864 0.284892 0.989256C0.388151 0.917169 0.508302 0.867722 0.615051 0.831667C0.835108 0.757343 1.12655 0.69831 1.45442 0.651472Z"
+                                  fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="header_cart_title">
+                        Корзина
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="rounding">
+
+        </div>
+    </header>
+
+    <main>
+        <div class="main_cart">
+            <div class="main_cart_title">
+                Корзина
+            </div>
+            <div>
+
             </div>
         </div>
-        <div class="search">
+
+        <div class="cart_order_wrapper">
             <div class="container">
-                <div class="input">
-                    <label>
-                        <input type="text" placeholder="Я ищу..."/>
-                    </label>
+                <div class="price_container">
+                    <div class="total_price_container">
+                        <div class="total_price">
+                            <h2 class="total_title">Итого</h2>
+                            <h2 class="total_count">2 101 063 сом</h2>
+                        </div>
+                        <div class="cart_order">
+                            <div class="cart_item">
+                                <div class="total_order">
+                                    203 товара
+                                </div>
+                                <div class="total_order_price">
+                                    2 302 048 сом
+                                </div>
+                            </div>
+                            <div class="cart_item">
+                                <div class="total_order">
+                                    Скидка
+                                </div>
+                                <div class="total_order_price">
+                                    -200 985 сом
+                                </div>
+                            </div>
+                            <div class="cart_item">
+                                <div class="total_order">
+                                    Доставка
+                                </div>
+                                <div class="total_order_price">
+                                    Бесплатно
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery_container">
+                        <div class="delivery_point">
+                            <div class="delivery_point_header">
+                                <h4 class="title">
+                                    Доставка в пункт выдачи
+                                </h4>
+                                <div class="edit_icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M11.1585 1.05991L14.9401 4.84154L4.72705 15.0546L0.735435 15.8529C0.385575 15.9229 0.0771149 15.6144 0.147087 15.2646L0.94541 11.273L11.1585 1.05991ZM2.17707 11.9321L11.1585 2.95072L13.0493 4.84154L4.06789 13.8229L1.70436 14.2956L2.17707 11.9321Z"
+                                              fill="#CB11AB"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M13.9948 5.78715L10.2132 2.00552L11.6313 0.587402C12.4145 -0.195801 13.6843 -0.195801 14.4675 0.587402L15.4129 1.53281C16.1961 2.31601 16.1961 3.58584 15.4129 4.36904L13.9948 5.78715ZM14.4675 3.42363C14.7286 3.16256 14.7286 2.73929 14.4675 2.47822L13.5221 1.53281C13.261 1.27174 12.8378 1.27174 12.5767 1.53281L12.104 2.00552L13.9948 3.89634L14.4675 3.42363Z"
+                                              fill="#CB11AB"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="delivery_address">
+                                <span class="title"> Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+                            </div>
+                            <div class="delivery_date">
+                                <span class="title">
+                                    5–8 фев
+                                </span>
+                            </div>
+                        </div>
+                        <div class="return_delivery">
+                            <div class="check_mark_icon">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M1 10.9998C1 16.5226 5.47715 20.9998 11 20.9998C16.5228 20.9998 21 16.5226 21 10.9998C21 5.47691 16.5228 0.999756 11 0.999756C5.47715 0.999756 1 5.47691 1 10.9998ZM19.1818 10.9997C19.1818 15.5184 15.5187 19.1816 11 19.1816C6.48128 19.1816 2.81815 15.5184 2.81815 10.9997C2.81815 6.48103 6.48128 2.81791 11 2.81791C15.5187 2.81791 19.1818 6.48103 19.1818 10.9997Z"
+                                          fill="url(#paint0_linear_7_2382)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M6.98273 9.6548C7.40206 9.29538 8.03336 9.34394 8.39278 9.76327L10.6286 12.3717L14.6826 7.58061C15.0394 7.15901 15.6704 7.10643 16.092 7.46317C16.5136 7.81991 16.5662 8.45089 16.2094 8.8725L11.7761 14.1118C11.1795 14.817 10.0933 14.8204 9.49219 14.1191L6.87427 11.0648C6.51485 10.6455 6.56341 10.0142 6.98273 9.6548Z"
+                                          fill="url(#paint1_linear_7_2382)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_7_2382" x1="4" y1="1.99994" x2="11"
+                                                        y2="20.9998" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0CD38B"/>
+                                            <stop offset="1" stop-color="#0CB477"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_7_2382" x1="9" y1="7.5" x2="10.5089"
+                                                        y2="15.8594" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0CD38B"/>
+                                            <stop offset="1" stop-color="#0CB477"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="free_delivery">
+                                <span class="info">Обратная доставка товаров на склад при отказе — <span class="free">бесплатно</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="purchase_card">
+                        <div class="card_selection">
+                            <div class="purchase_card_header">
+                                <div class="title">Оплата картой</div>
+                                <div class="edit_icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M11.1585 1.05991L14.9401 4.84154L4.72705 15.0546L0.735435 15.8529C0.385575 15.9229 0.0771149 15.6144 0.147087 15.2646L0.94541 11.273L11.1585 1.05991ZM2.17707 11.9321L11.1585 2.95072L13.0493 4.84154L4.06789 13.8229L1.70436 14.2956L2.17707 11.9321Z"
+                                              fill="#CB11AB"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M13.9948 5.78715L10.2132 2.00552L11.6313 0.587402C12.4145 -0.195801 13.6843 -0.195801 14.4675 0.587402L15.4129 1.53281C16.1961 2.31601 16.1961 3.58584 15.4129 4.36904L13.9948 5.78715ZM14.4675 3.42363C14.7286 3.16256 14.7286 2.73929 14.4675 2.47822L13.5221 1.53281C13.261 1.27174 12.8378 1.27174 12.5767 1.53281L12.104 2.00552L13.9948 3.89634L14.4675 3.42363Z"
+                                              fill="#CB11AB"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="selected_card">
+                                <div class="card_icon">
+                                    <svg width="30" height="10" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6813 1.84377L14.8645 5.7583H14.6806V1.00031H12.0852V9.00239H14.2372C14.8212 9.00239 15.3403 8.66717 15.589 8.14811L17.4166 4.24439H17.6005V9.00239H20.1959V1.00031H18.0114C17.4491 1.00031 16.9192 1.33553 16.6813 1.84377Z" fill="#319B42"/>
+                                        <path d="M6.97243 2.04923L5.90182 5.7583H5.71798L4.63656 2.04923C4.45271 1.42204 3.87956 1.00031 3.2307 1.00031H0.667725V9.00239H3.26315V4.24439H3.44699L4.93935 9.00239H6.66963L8.162 4.24439H8.34584V9.00239H10.9413V1.00031H8.37829C7.72943 1.00031 7.14546 1.42204 6.97243 2.04923Z" fill="#319B42"/>
+                                        <path d="M21.3244 4.56739V9.00239H23.9207V6.40629H26.7116C27.9232 6.40629 28.9509 5.63828 29.3295 4.56739H21.3244Z" fill="#319B42"/>
+                                        <path d="M26.6358 1.00031H20.8591C21.2161 2.90411 22.882 4.24543 24.8833 4.24543H29.3727C29.4051 4.07235 29.4267 3.87765 29.4267 3.68294C29.4267 2.1361 28.1827 1.00031 26.6358 1.00031Z" fill="url(#paint0_linear_7_2400)"/>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_7_2400" x1="20.8591" y1="2.62287" x2="29.4267" y2="2.62287" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#00A3E1"/>
+                                                <stop offset="0.3042" stop-color="#009ADD"/>
+                                                <stop offset="0.7987" stop-color="#0082D4"/>
+                                                <stop offset="1" stop-color="#0076CF"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="card_number">
+                                    1234 12•• •••• 1234
+                                </div>
+                            </div>
+                        </div>
+                        <div class="write-off-payment">
+                            <div class="debiting_immediately">
+                                <label>
+                                    <input type="checkbox" class="checkbox" />
+                                </label>
+                                <div class="text">Списать оплату сразу</div>
+                            </div>
+                            <div class="debiting_info">
+                                Спишем оплату с карты при получении
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="search-logo">
-                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M8.93382 1.70286C5.44752 1.70286 2.62132 4.52907 2.62132 8.01536C2.62132 11.5017 5.44752 14.3279 8.93382 14.3279C12.4201 14.3279 15.2463 11.5017 15.2463 8.01536C15.2463 4.52907 12.4201 1.70286 8.93382 1.70286ZM0.937988 8.01536C0.937988 3.59939 4.51784 0.0195312 8.93382 0.0195312C13.3498 0.0195313 16.9296 3.59939 16.9296 8.01536C16.9296 12.4313 13.3498 16.0112 8.93382 16.0112C4.51784 16.0112 0.937988 12.4313 0.937988 8.01536Z"
-                              fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M12.9602 12.8988C13.2846 12.5659 13.8175 12.559 14.1504 12.8834L20.1959 18.7751C20.5288 19.0995 20.5357 19.6324 20.2112 19.9653C19.8868 20.2982 19.3539 20.3051 19.021 19.9806L12.9756 14.089C12.6427 13.7645 12.6358 13.2317 12.9602 12.8988Z"
-                              fill="white"/>
-                    </svg>
+                <div class="order_btn_wrapper">
+                    <div class="order_btn">
+                        <button>Заказать</button>
+                    </div>
+                    <div class="agreement">
+                        <div class="agreement_svg">
+                            <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7657 1.68031L4.59586 10.4814L0.257324 5.66919L1.74276 4.32998L4.6174 7.5185L11.2999 0.319641L12.7657 1.68031Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <div class="agreement_info">
+                            Соглашаюсь с правилами пользования торговой площадкой и возврата
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-        <div class="profile_and_cart">
-            <div class="profile">
-                <div class="profile_inner">
-                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M14.5207 5.28873C14.5207 8.05869 12.4361 10.2066 10.006 10.2066C7.57586 10.2066 5.49117 8.05869 5.49117 5.31221C5.47931 2.60094 7.58777 0.5 10.006 0.5C12.4241 0.5 14.5207 2.55399 14.5207 5.28873ZM0.5 18.9977C0.5 19.9836 1.14326 20.5 2.94201 20.5H17.058C18.8567 20.5 19.5 19.9836 19.5 18.9977C19.5 16.1338 15.8429 12.1901 10.006 12.1901C4.15705 12.1901 0.5 16.1338 0.5 18.9977Z"
-                              fill="white"/>
-                    </svg>
-                </div>
-                <div class="profile_title">
-                    Профиль
-                </div>
-            </div>
-            <div class="cart">
-                <div class="cart_inner">
-                    <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M10.2214 15.4665C10.3829 15.9206 10.8452 16.1949 11.3212 16.119L24.0874 14.0828C24.5004 14.017 24.8288 13.701 24.9106 13.2909L26.2654 6.49865C26.3875 5.88644 25.925 5.31324 25.3008 5.30317L7.94122 5.02324C7.24354 5.01199 6.74913 5.70067 6.98289 6.35812L10.2214 15.4665Z"
-                              fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M10.8262 23.3593C12.1109 23.3593 13.1523 22.3178 13.1523 21.0331C13.1523 19.7484 12.1109 18.707 10.8262 18.707C9.54146 18.707 8.5 19.7484 8.5 21.0331C8.5 22.3178 9.54146 23.3593 10.8262 23.3593Z"
-                              fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M22.457 23.3593C23.7417 23.3593 24.7831 22.3178 24.7831 21.0331C24.7831 19.7484 23.7417 18.707 22.457 18.707C21.1723 18.707 20.1308 19.7484 20.1308 21.0331C20.1308 22.3178 21.1723 23.3593 22.457 23.3593Z"
-                              fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M4 2C5.933 2 7.5 1.77614 7.5 1.5C7.5 1.22386 5.933 1 4 1C2.067 1 0.5 1.22386 0.5 1.5C0.5 1.77614 2.067 2 4 2Z"
-                              fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M1.45442 0.651472C2.1177 0.556717 3.01745 0.5 4 0.5C4.98255 0.5 5.8823 0.556717 6.54558 0.651472C6.87345 0.69831 7.16489 0.757343 7.38495 0.831667C7.4917 0.867722 7.61185 0.917169 7.71511 0.989256C7.80017 1.04864 8 1.21275 8 1.5C8 1.78725 7.80017 1.95136 7.71511 2.01074C7.61185 2.08283 7.4917 2.13228 7.38495 2.16833C7.16489 2.24266 6.87345 2.30169 6.54558 2.34853C5.8823 2.44328 4.98255 2.5 4 2.5C3.01745 2.5 2.1177 2.44328 1.45442 2.34853C1.12655 2.30169 0.835108 2.24266 0.615051 2.16833C0.508302 2.13228 0.388151 2.08283 0.284892 2.01074C0.199835 1.95136 0 1.78725 0 1.5C0 1.21275 0.199835 1.04864 0.284892 0.989256C0.388151 0.917169 0.508302 0.867722 0.615051 0.831667C0.835108 0.757343 1.12655 0.69831 1.45442 0.651472Z"
-                              fill="white"/>
-                    </svg>
-                </div>
-                <div class="cart_title">
-                    Корзина
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="rounding">
-
-    </div>
-</header>
-
-<main>
-    <p>Привет, мир! Это ваш стартовый проект.</p>
-    <button id="clickMe">Нажми меня</button>
-</main>
-
+    </main>
+</div>
 <script src="js/main.js"></script>
 </body>
 </html>

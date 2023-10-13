@@ -3,7 +3,8 @@ header {
     width: 100%;
     max-width: 1400px;
     height: 112px;
-    gap: 32px;
+    font-family: 'Segoe UI', sans-serif;
+    /*gap: 32px;*/
     box-sizing: border-box;
     position: relative;
     background-color: #6725A8;
@@ -15,7 +16,6 @@ header {
     padding: 16px 3px 16px 24px;
     box-sizing: border-box;
     position: relative;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,6 +35,7 @@ header {
 
 .menu-and-logo {
     display: flex;
+    align-items: center;
     width: 170px;
     height: 56px;
     gap: 16px;
@@ -51,18 +52,18 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     width: 106px;
     height: 56px;
 }
 
 .logo span {
-    font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 24px;
     color: #fff;
     letter-spacing: 0.56px;
-    height: 48px;
 }
 
 /*search*/
@@ -132,7 +133,7 @@ input::placeholder {
     padding: 0 17px 0 0;
 }
 
-.profile, .cart {
+.profile, .header_cart {
     width: 56px;
     height: 56px;
     padding: 0 0 3px 0;
@@ -142,7 +143,7 @@ input::placeholder {
     flex-direction: column;
 }
 
-.profile_inner, .cart_inner {
+.profile_inner, .header_cart_inner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +151,7 @@ input::placeholder {
     height: 30px;
 }
 
-.profile_title, .cart_title {
+.profile_title, .header_cart_title {
     width: inherit;
     height: 16px;
     font-weight: 400;
