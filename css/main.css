@@ -1,5 +1,8 @@
 main {
-    width: 1024px;
+    width: 100%;
+    max-width: 1400px;
     height: 1825px;
     padding: 0 24px 16px 24px;
+    background: green;
+    box-sizing: border-box;
 }
