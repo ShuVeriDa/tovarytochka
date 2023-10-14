@@ -9,6 +9,9 @@
 }
 
 .cart_header h1 {
+    position: relative;
+    left: 1px;
+    top: 1px;
     width: 100%;
     max-width: 114px;
     height: 36px;
@@ -31,7 +34,7 @@
 .in_stock_wrapper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     width: 100%;
     max-width: 891px;
 }
@@ -64,8 +67,12 @@
 
 .choose_all_text span{
     position: relative;
-    right: 4px;
-    /*bottom: 0.5px;*/
+    right: 3.5px;
+    /*top: 0.2px;*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /*bottom: 0.2px;*/
     /*top: -1px;*/
 }
 
@@ -81,16 +88,35 @@
     gap: 20px;
     max-width: 891px;
     width: 100%;
+    position: relative;
+    bottom: 3px;
+}
+
+.added_cart:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.added_cart:nth-child(4) {
+    position: relative;
+    bottom: 7px;
 }
 
 .added_cart_item {
     width: 100%;
-    max-width: 891px;
+    max-width: 665px;
     height: 100%;
     min-height: 108px;
     display: flex;
-    align-items: end;
     justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0 0 0;
+    box-sizing: border-box;
 }
 
 .checkbox_image {
@@ -130,7 +156,10 @@
 }
 
 .order_title {
-    width: inherit;
+    position: relative;
+    top: 1px;
+    right: 1px;
+    width: 275px;
     /*height: 100%;*/
     /*min-height: 24px;*/
     font-weight: 400;
@@ -164,13 +193,24 @@
     color: rgba(151, 151, 175, 1);
 }
 
+.text_wb {
+    position: relative;
+    right: 1px;
+}
+
 .selling_company_info {
+    position: relative;
+    bottom: 3px;
+    left: 1px;
     display: flex;
     align-items: center;
     gap: 6px
 }
 
 .selling_company_icon {
+    position: relative;
+    bottom: 1px;
+    right: 1px;
     display: flex;
 }
 
@@ -178,9 +218,13 @@
 .added_cart_count_price {
     display: flex;
     justify-content: space-between;
-    max-width: 226px;
     width: 100%;
+    max-width: 226px;
     min-height: 108px;
+    gap: 16px;
+
+    position: relative;
+    top: 9px;
 }
 
 .added_cart_count {
@@ -188,7 +232,8 @@
     flex-direction: column;
     gap: 8px;
     padding: 3px 0 0 0;
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     height: 100%;
     min-height: 99px;
 }
@@ -211,7 +256,8 @@
     height: 23px;
     text-align: center;
     position: relative;
-    bottom: 1px;
+    bottom: 3px;
+    left: 1px;
 }
 
 .added_cart_count .counter  .decrement, .increment {
@@ -226,7 +272,13 @@
 
 .added_cart_count .counter .increment span {
     position: relative;
-    bottom: 2px;
+    bottom: 2.5px;
+}
+
+.added_cart_count .counter  .decrement {
+    position: relative;
+    left: 3px;
+    bottom: 1px;
 }
 
 .increment.disabled,
@@ -260,17 +312,20 @@
 }
 
 .favorite_remove_icons .remove, .favorite {
-    width: 18.12px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
 }
 
- .remove, .favorite svg {
-    width: inherit;
-    height: inherit;
+ .remove svg, .favorite svg {
+     width: 20px;
+     height: 20px;
 }
+
 
 
 .added_cart_price {
+    /*position: relative;*/
+    /*top: 12px;*/
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -288,11 +343,18 @@
     justify-content: end;
 }
 
-.actual_price .price {
+.actual_price h3.price {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
-    /*letter-spacing: -1%;*/
+    letter-spacing: 0.4px;
+    text-align: right;
+}
+
+.actual_price h4.price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
     text-align: right;
 }
 
