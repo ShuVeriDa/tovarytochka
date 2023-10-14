@@ -1,0 +1,27 @@
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .custom-checkbox-icon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-checkbox-icon .unchecked {
+    display: none;
+}
+
+.custom-checkbox .custom-checkbox-icon .checked {
+    display: none;
+}
+
+.custom-checkbox input:checked + .custom-checkbox-icon .checked {
+    display: block;
+}
+
+.custom-checkbox input:not(:checked) + .custom-checkbox-icon .unchecked {
+    display: block;
+    fill: black;
+    fill-opacity: 0.2;
+}
