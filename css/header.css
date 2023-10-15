@@ -9,7 +9,7 @@ header {
     background-color: #6725A8;
 }
 
-.header .container {
+.container {
     width: inherit;
     height: 88px;
     padding: 16px 3px 16px 24px;
