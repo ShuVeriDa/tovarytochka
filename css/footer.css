@@ -1,0 +1,36 @@
+.footer {
+    width: 100%;
+    max-width: 1400px;
+    position: relative;
+    background-color: #6725A8;
+    height: 88px;
+}
+
+.footer .container {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .rounding {
+    position: relative;
+    top: 0px;
+    width: inherit;
+    height: 24px;
+    border-radius: 0 0 24px 24px; /* Обратная форма закругления */
+    display: block;
+    background: rgba(246, 246, 250, 1);
+}
+
+
+
+
