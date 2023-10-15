@@ -164,6 +164,19 @@
     background: rgba(246, 246, 250, 1);
 }
 
+.return_delivery.del_meth {
+    width: 100%;
+    max-width: 891px;
+    background: rgba(255, 255, 255, 1);
+    padding: 0 24px;
+    height: 22px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+}
+
 .check_mark_icon {
     width: 22px;
     height: 22px;
@@ -175,13 +188,17 @@
 }
 
 .free_delivery {
-    height: 32px;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
+    width: 100%;
     max-width: 335px;
     color: rgba(0, 0, 0, 1);
+}
 
+.free_delivery.del_meth {
+    width: 100%;
+    max-width: 400px;
 }
 
 .free_delivery .free{

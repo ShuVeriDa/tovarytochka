@@ -190,25 +190,3 @@ header {
     right: 1px;
     bottom: 1px;
 }
-
-.header_cart_icon .cart_count {
-    position: absolute;
-    top: -4px;
-    left: 35px;
-    width: 16px;
-    height: 16px;
-    box-sizing: border-box;
-    padding: 0 2px;
-    border-radius: 50%;
-    background: rgba(245, 81, 35, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header_cart_icon .cart_count span {
-    font-weight: 700;
-    font-size: 10px;
-    line-height: 18px;
-    color: rgba(255, 255, 255, 1);
-}
