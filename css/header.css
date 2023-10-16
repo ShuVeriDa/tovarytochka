@@ -1,4 +1,6 @@
 
+
+
 header {
     width: 100%;
     max-width: 1400px;
@@ -189,4 +191,11 @@ header {
     position: relative;
     right: 1px;
     bottom: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+    .search {
+        width: 100%;
+        max-width: 594px;
+    }
 }
