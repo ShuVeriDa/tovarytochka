@@ -96,6 +96,7 @@
 .more_info_item {
     position: relative;
     right: 10.5px;
+    bottom: 1px;
     width: 100%;
     max-width: 682px;
     /*height: 228px;*/
@@ -178,8 +179,11 @@
         bottom: 1px;
     }
 
-    .more_info_item .more_info_text {
+    .more_info_item .more_info_text,
+    .more_info_item .more_info_text.img_component{
         letter-spacing: -0.15px;
+        position: relative;
+        right: 1px;
     }
 
     .more_info_item .working_hours {

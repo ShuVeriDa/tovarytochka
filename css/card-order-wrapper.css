@@ -31,6 +31,8 @@
 }
 
 .total_price_container {
+    position: relative;
+    right: 2px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -50,7 +52,7 @@
     font-size: 24px;
     line-height: 32px;
     /*letter-spacing: -0.24px;*/
-    letter-spacing: -0.50px;
+    letter-spacing: -0.65px;
 }
 
 .total_count {
@@ -159,7 +161,7 @@
 /*return_delivery*/
 .return_delivery {
     position: relative;
-    bottom: 5px;
+    bottom: 2px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -183,6 +185,8 @@
     align-items: center;
     gap: 8px;
     border-radius: 8px;
+    position: relative;
+    bottom: 1px;
 }
 
 .check_mark_icon {
@@ -209,6 +213,7 @@
 .free_delivery.del_meth {
     width: 100%;
     max-width: 400px;
+    letter-spacing: -0.05px;
 }
 
 .free_delivery .free{
@@ -219,7 +224,7 @@
 /*purchase_card*/
 .purchase_card {
     position: relative;
-    bottom: 4px;
+    bottom: 1px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -356,6 +361,8 @@
 
 /*order_btn*/
 .order_btn_wrapper {
+    position: relative;
+    top: 1px;
     width: 100%;
     max-width: 381px;
     display: flex;
@@ -431,64 +438,62 @@
         letter-spacing: -0.50px;
     }
 
-    .total_order,
-    .total_order_price {
-
-    }
-
     .delivery_address .title {
         letter-spacing: -0.10px;
     }
 
-    .delivery_date {
+    .delivery_container .return_delivery {
         position: relative;
-        bottom: 10px;
-        /*min-height: 17px;*/
-        display: flex;
-        gap: 1px;
+        bottom: 2px;
     }
 
-    .return_delivery {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        bottom: 10px;
-    }
-
-    .free_delivery {
+    .delivery_container .return_delivery .free_delivery {
         width: 100%;
         max-width: 209px;
         letter-spacing: -0.2px;
     }
 
+    .return_delivery.del_meth{
+        position: relative;
+        bottom: 11px;
+    }
+
     .purchase_card {
         position: relative;
-        bottom: 10px;
+        top: 0;
+        /*bottom: 10px;*/
+    }
+    
+    .card_selection .selected_card {
+        position: relative;
+        bottom: 1px;
     }
 
     .card_number {
         letter-spacing: 0.3px;
     }
+    
+    .write-off-payment {
+        position: relative;
+        bottom: 2px;
+    }
+
 
     .debiting_immediately .text {
         letter-spacing: -0.2px;
     }
 
-    .purchase_card_header {
-        position: relative;
-        top: 1px;
-    }
-
-    .purchase_card_header .edit_icon{
-        position: relative;
-        top: 1px;
-        right: 1px;
-    }
 
     .debiting_info {
         letter-spacing: -0.1px;
     }
+
+    .order_btn_wrapper .order_btn,
+    .order_btn_wrapper .agreement {
+        position: relative;
+        bottom: 2px;
+    }
+
 
     .agreement_info {
         width: 100%;
