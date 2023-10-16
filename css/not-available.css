@@ -27,3 +27,15 @@
     flex-direction: column;
     gap: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+    .not_available {
+        width: 100%;
+        max-width: 640px;
+    }
+
+    .not_available_items {
+        position: relative;
+        right: 2px;
+    }
+}

@@ -30,7 +30,7 @@
 }
 
 .delivery_pay_method_header.payment {
-   padding: 0;
+    padding: 0;
 }
 
 .delivery_pay_method_header .text {
@@ -38,7 +38,7 @@
     max-width: 755px;
 }
 
-.delivery_pay_method_header .text h2{
+.delivery_pay_method_header .text h2 {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -129,7 +129,7 @@
     bottom: 2px;
 }
 
-.delivery_order_img img{
+.delivery_order_img img {
     width: inherit;
     height: inherit;
     border-radius: 8px;
@@ -139,7 +139,7 @@
 
 }
 
-.delivery_order_img .cart_count div{
+.delivery_order_img .cart_count div {
 
 }
 
@@ -164,4 +164,35 @@
 .rating .icon {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .delivery_pay_method_header .change {
+        position: relative;
+        right: 3px;
+        bottom: 1px;
+    }
+
+    .more_info_item{
+        position: relative;
+        bottom: 1px;
+    }
+
+    .more_info_item .more_info_text {
+        letter-spacing: -0.15px;
+    }
+
+    .more_info_item .working_hours {
+        position: relative;
+        top: 2px;
+    }
+
+    .working_hours .working_hours_text {
+        letter-spacing: -0.15px;
+    }
+    .return_delivery .del_meth {
+        position: relative;
+        top: 10px;
+    }
+
 }

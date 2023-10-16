@@ -80,7 +80,6 @@
     width: 100%;
     outline: none;
     border: none;
-    color: rgba(151, 151, 175, 1);
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -112,4 +111,11 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+    .form_to_fill_container input {
+        position: relative;
+        bottom: 2px;
+    }
 }

@@ -453,4 +453,47 @@
     text-decoration: line-through;
 }
 
-/*not_available*/
+@media screen and (max-width: 1024px) {
+    .cart {
+        width: 100%;
+        max-width: 640px;
+    }
+
+    .choose_all_arrow .choose_all_text {
+        letter-spacing: -0.2px;
+        position: relative;
+        top: 1px;
+    }
+
+    .added_cart .order_img {
+        position: relative;
+        left: 3px;
+        bottom: 1px;
+    }
+
+    .order_info_component {
+        position: relative;
+        left: 3px;
+        bottom: 1px;
+    }
+    
+    .selling_company_info {
+        position: relative;
+        left: 0px;
+        bottom: 1px;
+    }
+
+    .added_cart_count {
+        position: relative;
+        bottom: 1px;
+        right: 1px;
+    }
+
+    .count_left {
+        letter-spacing: -0.3px;
+    }
+
+    .added_cart_price {
+
+    }
+}

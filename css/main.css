@@ -7,3 +7,10 @@ main {
     box-sizing: border-box;
     gap: 32px;
 }
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: 100%;
+        max-width: 1024px;
+    }
+}
