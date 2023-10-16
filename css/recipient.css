@@ -1,5 +1,6 @@
 .recipient {
     width: inherit;
+    position: relative;
     height: 216px;
     padding: 16px 24px 24px 24px;
     border-radius: 16px;
@@ -27,21 +28,21 @@
 .form_to_fill {
     width: 100%;
     max-width: 700px;
-    /*height: 128px;*/
 }
 
 .form_to_fill_container {
-    width: inherit;
-    height: 64px;
     display: flex;
     gap: 24px;
 }
 
 .form_to_fill_container .name,
-.form_to_fill_container .surname{
+.form_to_fill_container .surname {
+    flex-grow: 1;
+    position: relative;
+    top: 11px;
+    height: 45px;
     width: 100%;
     max-width: 338px;
-    height: inherit;
     display: flex;
     align-items: center;
     gap: 2px;
@@ -50,28 +51,64 @@
 .form_to_fill_container .mail,
 .form_to_fill_container .phone,
 .form_to_fill_container .inn {
+    flex-grow: 1;
+    position: relative;
+    top: 30px;
     width: 100%;
     max-width: 217.33px;
-    height: inherit;
+    height: 45px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 2px;
 }
+.form_to_fill_container .name::after,
+.form_to_fill_container .surname::after,
+.form_to_fill_container .mail::after,
+.form_to_fill_container .phone::after,
+.form_to_fill_container .inn::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    display: block;
+    width: inherit;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+}
 
-
-.form_to_fill_container  input {
-    width:inherit;
+.form_to_fill_container input {
+    position: relative;
+    width: 100%;
     outline: none;
     border: none;
     color: rgba(151, 151, 175, 1);
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form_to_fill_container .placeholder {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+    color: rgba(151, 151, 175, 1);
+}
+
+.form_to_fill_container input:focus + .placeholder,
+.form_to_fill_container input:not(:placeholder-shown) + .placeholder {
+    top: -13px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form_to_fill_container .inn {
+    position: relative;
 }
 
 .form_to_fill_container .inn .under_input {
+    position: absolute;
+    top: 38px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
