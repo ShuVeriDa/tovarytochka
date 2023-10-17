@@ -14,3 +14,11 @@ main {
         max-width: 1024px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    main {
+        display: none;
+        width: 100%;
+        max-width: 320px;
+    }
+}

@@ -16,12 +16,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-@media screen and (min-width: 1024px) {
-    .wrapper {
-        width: 1024px;
-    }
-}
-
 .wrapper {
     font-family: 'Segoe UI', sans-serif;
     display: flex;
@@ -30,4 +24,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 1024px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        width: 320px;
+    }
 }
