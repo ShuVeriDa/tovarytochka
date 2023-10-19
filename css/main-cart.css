@@ -65,7 +65,7 @@
     gap: 8px;
 }
 
-.choose_all_text span{
+.choose_all_text span {
     position: relative;
     right: 3.5px;
     /*top: 0.2px;*/
@@ -82,7 +82,6 @@
 }
 
 /*added_cart*/
-
 
 
 .added_cart {
@@ -218,6 +217,10 @@
     color: rgba(0, 0, 0, 1);
 }
 
+.order_title:hover {
+    cursor: pointer;
+}
+
 .order_title.absent-color {
     color: rgba(151, 151, 175, 1);
     width: 309px;
@@ -300,6 +303,7 @@
     height: 100%;
     min-height: 99px;
 }
+
 .added_cart_count .counter {
     width: inherit;
     height: 44px;
@@ -328,7 +332,7 @@
     left: 1px;
 }
 
-.added_cart_count .counter  .decrement, .increment {
+.added_cart_count .counter .decrement, .increment {
     width: 24px;
     height: 24px;
     font-weight: 400;
@@ -343,7 +347,7 @@
     bottom: 2.5px;
 }
 
-.added_cart_count .counter  .decrement {
+.added_cart_count .counter .decrement {
     position: relative;
     left: 3px;
     bottom: 1px;
@@ -364,6 +368,7 @@
     font-size: 13px;
     line-height: 16px;
     color: rgba(255, 59, 48, 1);
+    /*color: rgba(255, 59, 48, 1);*/
 }
 
 .favorite_remove {
@@ -384,11 +389,17 @@
     height: 20px;
 }
 
- .remove svg, .favorite svg {
-     width: 20px;
-     height: 20px;
+.favorite_remove_icons svg:hover{
+    cursor: pointer;
+}
+.favorite_remove_icons svg:hover path{
+    fill: rgba(245, 81, 35, 1);
 }
 
+.remove svg, .favorite svg {
+    width: 20px;
+    height: 20px;
+}
 
 
 .added_cart_price {
@@ -439,7 +450,7 @@
 }
 
 .old_price {
-    width: inherit;
+    width: 100%;
     display: flex;
     justify-content: end;
     font-weight: 400;
@@ -449,6 +460,7 @@
 }
 
 .old_price .price_currency {
+    width: 100%;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
     text-decoration: line-through;
 }
@@ -476,7 +488,7 @@
         left: 3px;
         bottom: 1px;
     }
-    
+
     .selling_company_info {
         position: relative;
         left: 0px;
@@ -496,4 +508,188 @@
     .added_cart_price {
 
     }
+}
+
+@media screen and (max-width: 320px) {
+    .cart {
+        display: flex;
+        width: 100%;
+        max-width: 288px;
+        gap: 16px;
+    }
+
+    .cart_header h1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .header .rounding {
+        bottom: -1px;
+    }
+
+    .cart_main {
+        position: relative;
+        bottom: 7px;
+    }
+
+    .choose_all {
+        max-width: 296px;
+        gap: 11px;
+    }
+
+    .choose_all_arrow {
+        width: 100%;
+        position: relative;
+        left: 3px;
+    }
+
+    .arrow_down {
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        position: relative;
+        left: 2px;
+    }
+
+    /*!*    added cart*!*/
+    /*.added_cart {*/
+    /*    max-width: 288px;*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    gap: 12px;*/
+    /*    position: relative;*/
+    /*    top: 10px;*/
+    /*    right: 3px;*/
+    /*}*/
+    /*.added_cart_item {*/
+    /*    max-width: 288px;*/
+    /*    min-height: 106px;*/
+    /*    gap: 16px;*/
+    /*    padding: 0;*/
+    /*    position: relative;*/
+    /*}*/
+    /*.checkbox_image {*/
+    /*    max-width: 80px;*/
+    /*    height: 106px;*/
+    /*}*/
+    /*.checkbox_item {*/
+    /*    position: absolute;*/
+    /*    top: 4px;*/
+    /*    left: 7px;*/
+    /*    width: 22px;*/
+    /*    height: 22px;*/
+    /*    z-index: 1;*/
+    /*}*/
+    /*.order_info_component {*/
+    /*    position: relative;*/
+    /*    top: 25px;*/
+    /*    max-width: 192px;*/
+    /*    min-height: 96px;*/
+    /*    justify-content: normal;*/
+    /*}*/
+    /*.order_info_component .order_title {*/
+    /*    width: inherit;*/
+    /*}*/
+    /*.order_img,*/
+    /*.order_img img {*/
+    /*    width: inherit;*/
+    /*    height: inherit;*/
+    /*}*/
+    /*.added_cart_count_price {*/
+    /*    position: relative;*/
+    /*    height: 32px;*/
+    /*}*/
+    /*.actual_price {*/
+    /*    align-items: normal;*/
+    /*    justify-content: normal;*/
+    /*}*/
+    /*.actual_price h3.price, h4 {*/
+    /*    font-weight: 700;*/
+    /*    font-size: 16px;*/
+    /*    line-height: 24px;*/
+    /*}*/
+    /*.added_cart_price {*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*    width: 100%;*/
+    /*    max-width: 288px;*/
+    /*    min-height: 24px;*/
+    /*    height: 24px;*/
+    /*    position: absolute;*/
+    /*    bottom: 210px;*/
+    /*    right: 5px;*/
+    /*    !*left: 40px;*!*/
+    /*}*/
+    /*.old_price {*/
+    /*    width: auto;*/
+    /*    position: relative;*/
+    /*    height: 20px;*/
+    /*    top: 5px;*/
+    /*}*/
+    /*.old_price .price_currency {*/
+    /*    font-weight: 400;*/
+    /*    font-size: 13px;*/
+    /*    line-height: 16px;*/
+    /*}*/
+    /*.added_cart::before {*/
+    /*    content: "";*/
+    /*    position: absolute;*/
+    /*    top: -10px;*/
+    /*    left: 0;*/
+    /*    width: 100%;*/
+    /*    height: 1px;*/
+    /*    background: rgba(0, 0, 0, 0.1);*/
+    /*    z-index: 1;*/
+    /*}*/
+    /*.added_cart:nth-child(2)::before {*/
+    /*    top: -14px;*/
+    /*}*/
+    /*.order_title  {*/
+    /*    font-weight: 400;*/
+    /*    font-size: 14px;*/
+    /*    line-height: 20px;*/
+    /*}*/
+    /*.order_size {*/
+    /*    position: absolute;*/
+    /*    top: 54px;*/
+    /*    left: -92px;*/
+    /*    border-radius: 6px;*/
+    /*    padding: 0 4px 3px 4px;*/
+    /*    background: rgba(255, 255, 255, 1);*/
+    /*    color: rgba(0, 0, 0, 1);*/
+    /*    width: 22px;*/
+    /*    height: 22px;*/
+    /*    box-sizing: border-box;*/
+    /*    font-weight: 400;*/
+    /*    font-size: 14px;*/
+    /*    line-height: 10px;*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*}*/
+    /*.order_color_size {*/
+    /*    font-weight: 400;*/
+    /*    font-size: 13px;*/
+    /*    line-height: 16px;*/
+    /*}*/
+    /*.order_size .size{*/
+    /*    display: none;*/
+    /*}*/
+    /*.selling_company_info {*/
+    /*    display: none;*/
+    /*}*/
+    /*.added_cart_count {*/
+    /*    flex-direction: row;*/
+    /*    height: 32px;*/
+    /*}*/
+    /*.added_cart_count .counter {*/
+    /*    width: 80px;*/
+    /*    height: 32px;*/
+    /*}*/
+    /*.count_left {*/
+    /*    height: 32px;*/
+    /*}*/
+    /*.items_left {*/
+    /*    height: 32px;*/
+    /*}*/
 }

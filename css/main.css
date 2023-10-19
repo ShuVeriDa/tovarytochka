@@ -17,8 +17,13 @@ main {
 
 @media screen and (max-width: 320px) {
     main {
-        display: none;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         max-width: 320px;
+        height: 2718px;
+        padding: 0 16px;
+        position: relative;
+        bottom: 10px;
     }
 }
