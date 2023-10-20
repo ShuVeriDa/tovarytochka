@@ -6,6 +6,7 @@ const payImmediately = document.getElementById('payImmediately');
 const checkboxes = document.querySelectorAll('.added_cart_item input[type="checkbox"]');
 const chooseAllCheckbox = document.querySelector(".choose_all input[type='checkbox']");
 const totalOrderEl = document.querySelector(".total_order");
+const arrowUpElement = document.querySelector('.choose_all .arrow_up');
 
 function formatNumberWithSpaces(number) {
   const parts = number.toString().split('.');
@@ -75,6 +76,17 @@ function updateTotalPrice() {
 
   if (allChecked) {
     chooseAllCheckbox.checked = true;
+  }
+
+  if (arrowUpElement.style.display === 'none') {
+    chooseAllText.textContent = `${countOrder} товаров · ${formattedPrice} сом`
+  }
+
+  return {
+    formattedPrice,
+    countOrder,
+    allUnchecked,
+    allChecked
   }
 }
 

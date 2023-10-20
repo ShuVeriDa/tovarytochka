@@ -32,6 +32,7 @@ const countState = () => {
         counts[index]--;
         countDisplay.textContent = counts[index];
         updateButtonState(counts[index], index);
+        updateTotalPrice()
       }
     });
 
@@ -40,9 +41,12 @@ const countState = () => {
         counts[index]++;
         countDisplay.textContent = counts[index];
         updateButtonState(counts[index], index);
+        updateTotalPrice()
       }
     });
   });
+
+  updateTotalPrice()
 }
 
 countState();
