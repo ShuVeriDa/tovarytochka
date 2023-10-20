@@ -5,6 +5,7 @@ const payBtn = document.getElementById('payBtn');
 const payImmediately = document.getElementById('payImmediately');
 const checkboxes = document.querySelectorAll('.added_cart_item input[type="checkbox"]');
 const chooseAllCheckbox = document.querySelector(".choose_all input[type='checkbox']");
+const totalOrderEl = document.querySelector(".total_order");
 
 function formatNumberWithSpaces(number) {
   const parts = number.toString().split('.');
@@ -14,27 +15,35 @@ function formatNumberWithSpaces(number) {
 
 function updateTotalPrice() {
   const checkboxes = document.querySelectorAll('.in_stock_wrapper .checkbox_item input[type="checkbox"]');
+
   let totalPrice = 0;
   let totalOldPrice = 0;
+  let countOrder = 0
   let quantityProduct = checkboxes.length
 
   checkboxes.forEach(checkbox => {
     if (checkbox.checked) {
       const item = checkbox.closest('.added_cart');
 
-      const priceElement = item.querySelector('.added_cart_price .price');
-      const oldPriceElement = item.querySelector('.added_cart_price .price_currency');
+      const priceEl = item.querySelector('.added_cart_price .price');
+      const oldPriceEl = item.querySelector('.added_cart_price .price_currency');
+      const countEl = item.querySelector(".count");
 
-      if (priceElement) {
-        const priceText = priceElement.textContent;
+      if (priceEl) {
+        const priceText = priceEl.textContent;
         const price = parseFloat(priceText.replace(/ /g, ''));
         totalPrice += Number(price);
       }
 
-      if (oldPriceElement) {
-        const oldPriceText = oldPriceElement.textContent;
+      if (oldPriceEl) {
+        const oldPriceText = oldPriceEl.textContent;
         const price = parseFloat(oldPriceText.replace(/ /g, ''));
         totalOldPrice += Number(price);
+      }
+
+      if (countEl) {
+        const countAll = countEl.textContent
+        countOrder += Number(countAll)
       }
     }
   });
@@ -47,6 +56,7 @@ function updateTotalPrice() {
   totalPriceElement.textContent = formattedPrice + " сом";
   totalOrderPriceElement.textContent = formattedOldPrice + " сом";
   discount.textContent = discountSaved === 0 ? 0 : "-" + formattedDiscount + " сом";
+  totalOrderEl.textContent = `${countOrder} товара`
 
   if (payImmediately.checked) {
     payBtn.textContent = "Оплатить " + formattedPrice + " сом";

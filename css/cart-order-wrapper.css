@@ -444,13 +444,20 @@
 }
 
 
+.popup.del_meth {
+    display: none;
+    position: absolute;
+    left: 249px;
+    top: 28px;
+}
+
 @media screen and (max-width: 1024px) {
     .cart_order_wrapper {
         width: 100%;
         max-width: 303px;
     }
 
-    .cart_order_wrapper .container{
+    .cart_order_wrapper .container {
         min-height: 605px;
     }
 
@@ -479,7 +486,7 @@
         letter-spacing: -0.2px;
     }
 
-    .return_delivery.del_meth{
+    .return_delivery.del_meth {
         position: relative;
         bottom: 11px;
     }
@@ -489,7 +496,7 @@
         top: 0;
         /*bottom: 10px;*/
     }
-    
+
     .card_selection .selected_card {
         position: relative;
         bottom: 1px;
@@ -498,7 +505,7 @@
     .card_number {
         letter-spacing: 0.3px;
     }
-    
+
     .write-off-payment {
         position: relative;
         bottom: 2px;
@@ -533,5 +540,11 @@
         width: 100%;
         max-width: 288px;
         height: 42px;
+    }
+
+    .return_delivery.del_meth .popup.del_meth {
+        position: absolute;
+        left: 249px;
+        top: 37px;
     }
 }
