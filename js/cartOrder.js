@@ -3,10 +3,12 @@ const totalOrderPriceElement = document.getElementById('totalOrderPrice');
 const discount = document.getElementById('discount');
 const payBtn = document.getElementById('payBtn');
 const payImmediately = document.getElementById('payImmediately');
+const infoDebiting = document.querySelectorAll('.info_debiting');
 const checkboxes = document.querySelectorAll('.added_cart_item input[type="checkbox"]');
 const chooseAllCheckbox = document.querySelector(".choose_all input[type='checkbox']");
 const totalOrderEl = document.querySelector(".total_order");
 const arrowUpElement = document.querySelector('.choose_all .arrow_up');
+const paymentMethod = document.querySelector('.payment_method ');
 
 function formatNumberWithSpaces(number) {
   const parts = number.toString().split('.');
@@ -110,10 +112,18 @@ chooseAllCheckbox.addEventListener("change", handleChooseAllChange);
 payImmediately.addEventListener('click', function () {
   if (payImmediately.checked) {
     payBtn.textContent = "Оплатить " + totalPriceElement.textContent;
+    infoDebiting.forEach(item => {
+      item.style.display = 'none'
+    })
+    paymentMethod.style.height = 'initial'
   }
 
   if (!payImmediately.checked) {
     payBtn.textContent = "Заказать"
+    infoDebiting.forEach(item => {
+      item.style.display = 'flex'
+    })
+    paymentMethod.style.height = '100%'
   }
 });
 

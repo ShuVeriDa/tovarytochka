@@ -281,9 +281,12 @@
     top: 7px;
 }
 
-.info_debiting {
+.payment_method .info_debiting {
     position: relative;
     top: 7px;
+}
+
+.info_debiting {
     display: flex;
     gap: 8px;
     font-weight: 400;
@@ -356,7 +359,7 @@
     margin: 0;
 }
 
-.debiting_info {
+.write-off-payment .info_debiting {
     height: 16px;
     font-weight: 400;
     font-size: 13px;
@@ -517,7 +520,7 @@
     }
 
 
-    .debiting_info {
+    .write-off-payment .info_debiting {
         letter-spacing: -0.1px;
     }
 
