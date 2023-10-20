@@ -428,7 +428,7 @@
 }
 
 .favorite_remove {
-    display: flex;
+    display: none;
     align-items: end;
     justify-content: end;
 }
@@ -460,7 +460,7 @@
 
 
 .added_cart_price {
-    /*position: relative;*/
+    position: relative;
     /*top: 12px;*/
     display: flex;
     flex-direction: column;
@@ -516,10 +516,56 @@
     color: rgba(151, 151, 175, 1);
 }
 
+.old_price:hover {
+    cursor: pointer;
+}
+
 .old_price .price_currency {
     width: 100%;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
     text-decoration: line-through;
+}
+
+.popup_old_price {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+
+    position: absolute;
+    right: -10px;
+    top: 55px;
+    width: 100%;
+    max-width: 209px;
+    border-radius: 8px;
+    padding: 11px 16px 13px 16px;
+    /*box-sizing: border-box;*/
+    background: #FFFFFF;
+    z-index: 1;
+}
+
+.popup_old_price_discount {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.discount_title {
+    width: 100%;
+    max-width: 160px;
+    color: #A0A0A4;
+}
+
+.discount_price {
+    width: 100%;
+    max-width: 57px;
+    color: #000;
+}
+
+.discount_title,
+.discount_price {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 @media screen and (max-width: 1024px) {
