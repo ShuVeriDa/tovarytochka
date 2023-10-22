@@ -117,6 +117,10 @@
     height: 20px;
 }
 
+.delivery_point_header .edit_icon:hover {
+    cursor: pointer;
+}
+
 .delivery_point_header .edit_icon svg {
     position: relative;
     top: 2px;
@@ -258,6 +262,10 @@
     position: relative;
     right: 2px;
     top: 1px;
+}
+
+.purchase_card_header .edit_icon:hover {
+    cursor: pointer;
 }
 
 .purchase_card_header .title {

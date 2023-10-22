@@ -51,6 +51,10 @@
     max-width: 78px;
 }
 
+.delivery_pay_method_header .change:hover {
+    cursor: pointer;
+}
+
 .delivery_pay_method_header .change h4 {
     font-weight: 700;
     font-size: 16px;

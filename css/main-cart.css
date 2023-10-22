@@ -469,6 +469,10 @@
     fill: rgba(245, 81, 35, 1);
 }
 
+.favorite.active svg path {
+    fill: rgba(245, 81, 35, 1);
+}
+
 .remove svg, .favorite svg {
     width: 20px;
     height: 20px;

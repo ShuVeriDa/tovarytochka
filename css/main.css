@@ -9,6 +9,10 @@ main {
     gap: 32px;
 }
 
+.error {
+    border: 2px solid red; // Можете стилизовать как угодно
+}
+
 @media screen and (max-width: 1024px) {
     main {
         width: 100%;

@@ -7,8 +7,6 @@ const arrowDownEl = document.querySelector('.choose_all .arrow_down');
 const arrowUpEl = document.querySelector('.choose_all .arrow_up');
 const addedCartItems = document.querySelectorAll('.in_stock_wrapper .added_cart');
 const chooseAllText = document.querySelector('.choose_all_text span');
-
-
 const arrowDownElNotAvailable = document.querySelector('.not_available_header .arrow_down');
 const arrowUpElNotAvailable = document.querySelector('.not_available_header .arrow_up');
 const addedCartItemsNotAvailable = document.querySelectorAll('.not_available_items .added_cart');
@@ -80,3 +78,4 @@ arrowDownElNotAvailable.addEventListener('click', function () {
     arrowDownElNotAvailable.style.display = 'none'
   });
 });
+
