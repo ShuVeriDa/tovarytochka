@@ -1,6 +1,6 @@
 // Удаление или добавление в избранное товаров
-const removeOrderButton = document.querySelectorAll(".remove");
-const favoriteOrderButton = document.querySelectorAll(".favorite");
+const removeOrderButton = document.querySelectorAll(".favorite_remove_icons .remove");
+const favoriteOrderButton = document.querySelectorAll(".favorite_remove_icons .favorite");
 
 removeOrderButton.forEach((removeButton, index) => {
   removeButton.addEventListener("click", function() {
@@ -10,7 +10,6 @@ removeOrderButton.forEach((removeButton, index) => {
       updateTotalPrice();
     }
   });
-
 });
 
 favoriteOrderButton.forEach((favoriteButton, index) => {
