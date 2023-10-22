@@ -449,6 +449,20 @@
     justify-content: end;
 }
 
+.favorite_remove.absent .favorite_remove_icons svg:hover path {
+    fill:  #CB11AB;
+}
+
+.favorite_remove.absent .favorite_remove_icons svg:hover path {
+    fill:  #CB11AB;
+}
+
+.favorite_remove.absent .favorite.active svg path {
+    fill:  #CB11AB;
+
+}
+
+
 .favorite_remove_icons {
     display: flex;
     justify-content: space-between;
