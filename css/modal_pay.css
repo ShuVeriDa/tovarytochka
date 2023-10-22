@@ -118,16 +118,6 @@
         background-color: rgb(255, 255, 255);
     }
 
-    .modal_header {
-        padding: 16px 11px 13px 16px;
-    }
-
-    .modal_pay_title h3{
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 28px;
-    }
-
     .modal_content_pay {
         width: 100%;
         max-width: 320px;
@@ -136,6 +126,16 @@
         box-sizing: border-box;
         border-radius: 0;
         background-color: rgb(255, 255, 255);
+    }
+
+    .modal_header {
+        padding: 16px 11px 13px 16px;
+    }
+
+    .modal_pay_title h3{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .modal_pay_main {
@@ -155,7 +155,7 @@
         width: 100%;
         max-width: 288px;
         height: 100%;
-        max-height: 44px;
+        min-height: 44px;
     }
 
 }
