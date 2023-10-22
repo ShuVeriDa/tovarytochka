@@ -81,7 +81,11 @@ function updateTotalPrice() {
   }
 
   if (arrowUpElement.style.display === 'none') {
-    chooseAllText.textContent = `${countOrder} товаров · ${formattedPrice} сом`
+    if(countOrder < 5) {
+      chooseAllText.textContent = `${countOrder} товара · ${formattedPrice} сом`
+    } else {
+      chooseAllText.textContent = `${countOrder} товаров · ${formattedPrice} сом`
+    }
   }
 
   return {

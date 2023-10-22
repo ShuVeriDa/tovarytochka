@@ -47,8 +47,11 @@ arrowUpEl.addEventListener('click', function () {
   const {formattedPrice, countOrder, allChecked, allUnchecked} = updateTotalPrice()
 
   if (allUnchecked || !allChecked || allChecked) {
-    chooseAllText.textContent = `${countOrder} товаров · ${formattedPrice} сом`
-
+    if(countOrder < 5) {
+      chooseAllText.textContent = `${countOrder} товара · ${formattedPrice} сом`
+    } else {
+      chooseAllText.textContent = `${countOrder} товаров · ${formattedPrice} сом`
+    }
   }
 });
 
