@@ -10,16 +10,17 @@ function openModal() {
   document.body.style.overflow = 'hidden';
 }
 
+function closeModal() {
+  modalPay.style.display = 'none';
+  modalPay.classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
 openPayButton.addEventListener('click', openModal);
 openButtonIcon.addEventListener('click', openModal);
+closeButton.addEventListener('click', closeModal);
 
 
-closeButton.addEventListener('click', () => {
-  modalPay.style.display = 'none';
-  document.body.style.overflow = 'auto';
-});
-
-// Add event listeners to handle radio button behavior
 radioButtons.forEach((radio) => {
   radio.addEventListener('change', (event) => {
     if (event.target.checked) {
