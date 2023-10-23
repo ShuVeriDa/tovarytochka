@@ -21,6 +21,11 @@ main {
 }
 
 @media screen and (max-width: 320px) {
+    body {
+        width: 100%;
+        max-width: 320px;
+        min-height: 2933px;
+    }
     main {
         display: flex;
         flex-direction: column;
@@ -30,5 +35,6 @@ main {
         padding: 0 16px;
         position: relative;
         bottom: 10px;
+        gap: 32px;
     }
 }

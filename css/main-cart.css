@@ -212,6 +212,7 @@
     max-width: 543px;
     min-height: 96px;
     height: 100%;
+
     position: relative;
 }
 
@@ -270,8 +271,6 @@
     font-size: 13px;
     line-height: 16px;
     color: rgba(151, 151, 175, 1);
-
-
     z-index: 1;
 }
 
@@ -368,6 +367,11 @@
     max-width: 100px;
     height: 100%;
     min-height: 99px;
+
+    position: relative;
+    bottom: 1px;
+    right: 1px;
+
 }
 
 .added_cart_count .counter {
@@ -440,25 +444,26 @@
     font-size: 13px;
     line-height: 16px;
     color: rgba(255, 59, 48, 1);
+    letter-spacing: -0.3px;
     /*color: rgba(255, 59, 48, 1);*/
 }
 
 .favorite_remove {
-    display: none;
+    display: flex;
     align-items: end;
     justify-content: end;
 }
 
 .favorite_remove.absent .favorite_remove_icons svg:hover path {
-    fill:  #CB11AB;
+    fill: #CB11AB;
 }
 
 .favorite_remove.absent .favorite_remove_icons svg:hover path {
-    fill:  #CB11AB;
+    fill: #CB11AB;
 }
 
 .favorite_remove.absent .favorite.active svg path {
-    fill:  #CB11AB;
+    fill: #CB11AB;
 
 }
 
@@ -555,7 +560,7 @@
 }
 
 .old_price .price_currency {
-    width: 100%;
+    /*width: 100%;*/
     border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
     text-decoration: line-through;
 }
@@ -620,34 +625,18 @@
         bottom: 1px;
     }
 
-    .order_info_component {
-        position: relative;
-        left: 3px;
-        bottom: 1px;
-    }
-
     .selling_company_info {
         position: relative;
         left: 0px;
         bottom: 1px;
     }
-
-    .added_cart_count {
-        position: relative;
-        bottom: 1px;
-        right: 1px;
-    }
-
-    .count_left {
-        letter-spacing: -0.3px;
-    }
-
-    .added_cart_price {
-
-    }
 }
 
 @media screen and (max-width: 320px) {
+
+    .in_stock_wrapper {
+        gap: 16px;
+    }
     .cart {
         display: flex;
         width: 100%;
@@ -666,6 +655,7 @@
     }
 
     .cart_main {
+        gap: 48px;
         position: relative;
         bottom: 7px;
     }
@@ -673,6 +663,16 @@
     .choose_all {
         max-width: 296px;
         gap: 11px;
+    }
+
+    .choose_all::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        background: rgba(0, 0, 0, 0.1);
     }
 
     .choose_all_arrow {
@@ -687,5 +687,305 @@
         justify-content: center;
         position: relative;
         left: 2px;
+    }
+
+    .checkbox_image {
+        top: 5px;
+        position: relative;
+        width: 80px;
+        height: 106px;
+    }
+
+    .checkbox_item {
+        position: absolute;
+        left: 4px;
+        top: 3px;
+        z-index: 1;
+        background: #FFFFFF;
+        border-radius: 8px;
+    }
+
+    .order_img {
+        position: absolute;
+        right: 3px;
+        width: inherit;
+        height: inherit;
+    }
+
+    .order_img img {
+        position: absolute;
+        right: 3px;
+        width: inherit;
+        height: inherit;
+    }
+
+    .order_info_component {
+        width: 100%;
+        max-width: 192px;
+        min-height: 94px;
+        height: 100%;
+        gap: 4px;
+        /*padding-top: 24px;*/
+        box-sizing: border-box;
+        justify-content: normal;
+
+        position: relative;
+        left: 0px;
+        top: 3px;
+    }
+
+    .order_title {
+        max-height: 40px;
+        width: inherit;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        top: 0;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Ограничение количества строк */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        /*white-space: normal; !* Запретить перенос строк *!*/
+        /*overflow: hidden; !* Скрывать текст, который не помещается в контейнере *!*/
+        /*text-overflow: ellipsis; !* Добавить многоточие (...) к обрезанному тексту *!*/
+    }
+
+    .order_color {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .order_size {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .selling_company_info {
+        display: none;
+    }
+
+    .added_cart {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .added_cart::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    .added_cart_item {
+        /*box-sizing: border-box;*/
+        /*min-height: 126px;*/
+    }
+
+    .added_cart:nth-child(4) {
+        position: relative;
+        bottom: 0;
+    }
+
+    .added_cart_count_price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*height: 100%;*/
+        min-height: 32px;
+        max-height: 32px;
+        gap: 16px;
+        width: 100%;
+        max-width: 288px;
+        /*position: relative;*/
+        /*top: 0;*/
+
+    }
+
+    .added_cart_price {
+        position: relative;
+        top: 3px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 192px;
+        min-height: 24px;
+        max-height: 24px;
+        /*max-height: 24px;*/
+        justify-content: flex-start;
+    }
+
+    .actual_price {
+        /*width: 100%;*/
+        max-width: 104px;
+        min-height: 32px;
+        max-height: 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .actual_price h4.price {
+        text-align: left;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+    }
+
+    .actual_price h3.price {
+        letter-spacing: 0.3px;
+    }
+
+    .actual_price h3.price, h4.currency{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+
+    .price_currency {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: -0.4px;
+    }
+
+    .old_price {
+        position: relative;
+        bottom: 3px;
+        left: 2px;
+        width: auto;
+        /*max-width: 79px;*/
+        min-height: 32px;
+        max-height: 32px;;
+        justify-content: center;
+        flex-direction: column;
+        justify-items: center;
+        /*align-items: center;*/
+    }
+
+    .old_price .price_currency {
+        display: flex;
+        /*min-height: 32px;*/
+        /*max-height: 32px;*/
+    }
+
+    .price_currency {
+
+    }
+
+    .added_cart_count {
+        justify-content: space-between;
+        flex-direction: row;
+        min-height: 32px;
+        max-height: 32px;
+        max-width: 288px;
+        width: 100%;
+        padding: 0;
+        /*bottom: -1px;*/
+    }
+
+    .added_cart_count .counter {
+        width: 80px;
+        min-height: 32px;
+        max-height: 32px;
+        background: #fff;
+    }
+
+    .selling_company {
+        min-height: auto;
+        position: relative;
+        top: 5px;
+        /*bottom: 8px;*/
+    }
+
+    .count_left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 32px;
+        min-height: 32px;
+        width: 100%;
+        max-width: 116px;
+    }
+
+    .items_left {
+        display: flex;
+        align-items: center;
+        max-width: 88px;
+        width: 88px;
+    }
+
+    .favorite_remove {
+        width: inherit;
+        justify-content: center;
+
+    }
+
+    .favorite_remove_icons {
+        width: 60px;
+        /*width: inherit;*/
+    }
+
+    .favorite_remove_icons .remove {
+        position: relative;
+        left: 2px;
+    }
+
+    .added_cart_count .counter .count {
+        font-size: 14px;
+        line-height: 20px;
+        bottom: 0;
+        left: 1px;
+    }
+
+    .added_cart_count .counter .decrement {
+        position: relative;
+        left: 5px;
+        bottom: 1px;
+    }
+
+    .added_cart_count .counter .increment span {
+        position: relative;
+        bottom: 0;
+    }
+
+    .added_cart_count .counter .increment {
+        position: relative;
+        bottom: 3px;
+        right: 2px;
+    }
+
+    .order_size {
+        position: absolute;
+        bottom: 2px;
+        left: -92px;
+        background: #FFFFFF;
+        width: 22px;
+        height: 22px;
+        border-radius: 6px;
+
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .order_size .size {
+        display: none;
+    }
+
+    .order_color {
+        position: relative;
+        top: 3px;
     }
 }

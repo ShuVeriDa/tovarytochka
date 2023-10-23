@@ -49,6 +49,14 @@ header {
     border-radius: 8px;
 }
 
+.menu.one {
+    display: flex;
+}
+
+.menu.two {
+    display: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -222,6 +230,14 @@ header {
     .search-logo {
         width: inherit;
         height: inherit;
+    }
+
+    .menu.one {
+        display: none;
+    }
+
+    .menu.two {
+        display: flex;
     }
 
     .menu {

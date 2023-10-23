@@ -40,3 +40,84 @@
         right: 2px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .not_available {
+        width: 100%;
+        max-width: 296px;
+        position: relative;
+    }
+
+    .not_available_header {
+        position: relative;
+        top: 6px;
+    }
+
+    .not_available_items {
+        position: relative;
+        right: 2px;
+    }
+
+    .not_available_header .arrow_down, .arrow_up {
+        position: relative;
+        bottom: 8px;
+        left: 8px;
+    }
+
+    .not_available_items {
+        gap: 16px;
+    }
+
+    .checkbox_image.absent {
+        position: relative;
+        width: 80px;
+        height: 106px;
+    }
+
+    .checkbox_image.absent .order_img {
+        position: relative;
+        bottom: 4px;
+    }
+
+    .added_cart.absent {
+        position: relative;
+        top: 8px;
+        left: 2px;
+    }
+
+    .added_cart_count.absent {
+        display: flex;
+        justify-content: end;
+        max-height: 24px;
+        min-height: 24px;
+    }
+
+    .added_cart_count_price.absent {
+        max-height: 24px;
+        min-height: 24px;
+    }
+
+    .items_left.absent {
+        position: relative;
+        bottom: 8px;
+        width: 74px;
+    }
+
+    .order_info_component.absent .order_title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Ограничение количества строк */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+    .order_title.absent-color {
+        width: 192px;
+    }
+
+    .order_color_size .order_size.absent {
+        position: absolute;
+        bottom: 6px;
+    }
+}

@@ -47,7 +47,7 @@ arrowUpEl.addEventListener('click', function () {
   const {formattedPrice, countOrder, allChecked, allUnchecked} = updateTotalPrice()
 
   if (allUnchecked || !allChecked || allChecked) {
-    if(countOrder < 5) {
+    if (countOrder < 5) {
       chooseAllText.textContent = `${countOrder} товара · ${formattedPrice} сом`
     } else {
       chooseAllText.textContent = `${countOrder} товаров · ${formattedPrice} сом`
@@ -81,3 +81,17 @@ arrowDownElNotAvailable.addEventListener('click', function () {
     arrowDownElNotAvailable.style.display = 'none'
   });
 });
+
+// перемещение cartHeaders в
+if (document.body.offsetWidth <= 320) {
+  // Получаем все элементы с классом "cart_header"
+  const addedCartPrice = document.querySelectorAll('.added_cart_price ');
+
+  // Получаем элемент с классом "choose_all_text"
+  const orderInfoComponent = document.querySelectorAll('.order_info_component');
+
+  // Перемещаем каждый элемент с классом "cart_header" в "choose_all_text"
+  addedCartPrice.forEach((header, index) => {
+    orderInfoComponent[index].insertAdjacentElement('afterbegin', header);
+  });
+}
