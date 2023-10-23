@@ -39,6 +39,15 @@
         position: relative;
         right: 2px;
     }
+
+    .checkbox_image.absent {
+        position: relative;
+    }
+
+    .checkbox_image.absent .order_img {
+        position: relative;
+        left: 1px;
+    }
 }
 
 @media screen and (max-width: 320px) {

@@ -613,6 +613,11 @@
         max-width: 640px;
     }
 
+    .order_info_component {
+        position: relative;
+        left: 2px;
+    }
+
     .choose_all_arrow .choose_all_text {
         letter-spacing: -0.2px;
         position: relative;
