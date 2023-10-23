@@ -52,6 +52,7 @@
 
 @media screen and (max-width: 320px) {
     .not_available {
+        padding: 0 16px;
         width: 100%;
         max-width: 296px;
         position: relative;
@@ -67,7 +68,13 @@
         right: 2px;
     }
 
-    .not_available_header .arrow_down, .arrow_up {
+    .not_available .not_available_header .arrow_up {
+        position: relative;
+        bottom: 8px;
+        left: 8px;
+    }
+
+    .not_available .not_available_header .arrow_down {
         position: relative;
         bottom: 8px;
         left: 8px;

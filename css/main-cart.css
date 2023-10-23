@@ -641,12 +641,20 @@
 
     .in_stock_wrapper {
         gap: 16px;
+        width: 288px;
+        padding: 0 16px;
     }
     .cart {
+        box-sizing: border-box;
+        /*padding: 0 16px;*/
         display: flex;
         width: 100%;
         max-width: 288px;
         gap: 16px;
+    }
+
+    .cart_header {
+        padding: 0 16px
     }
 
     .cart_header h1 {
@@ -686,7 +694,7 @@
         left: 3px;
     }
 
-    .arrow_up, .arrow_down {
+     .arrow_up, .arrow_down {
         width: 44px;
         height: 44px;
         justify-content: center;

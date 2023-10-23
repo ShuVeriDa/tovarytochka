@@ -1,3 +1,13 @@
+.clearance_goods {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: inherit;
+    position: relative;
+    top: 15px;
+    /*height: 746px;*/
+}
+
 .delivery_method_component {
     width: inherit;
     border-radius: 16px;
@@ -178,13 +188,13 @@
         bottom: 1px;
     }
 
-    .more_info_item{
+    .more_info_item {
         position: relative;
         bottom: 1px;
     }
 
     .more_info_item .more_info_text,
-    .more_info_item .more_info_text.img_component{
+    .more_info_item .more_info_text.img_component {
         letter-spacing: -0.15px;
         position: relative;
         right: 1px;
@@ -198,9 +208,93 @@
     .working_hours .working_hours_text {
         letter-spacing: -0.15px;
     }
+
     .return_delivery .del_meth {
         position: relative;
         top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .clearance_goods {
+        position: relative;
+        top: -6px;
+        width: 320px;
+        min-height: 1080px;
+        padding: 0 0 16px 0;
+        gap: 12px;
+    }
+
+    .delivery_pay_method_header .change {
+        position: relative;
+        right: 3px;
+        bottom: 1px;
+    }
+
+    .delivery_method_component {
+        width: inherit;
+        min-height: 512px;
+    }
+
+    .delivery_method {
+        border-radius: 16px;
+        min-height: 416px;
+        gap: 8px;
+    }
+
+    .delivery_pay_method_header {
+        width: inherit;
+        height: 28px;
+        padding: 0 16px;
+    }
+
+    .delivery_pay_method_header .text {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .delivery_pay_method_header .text h2 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -1px;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .delivery_method_info {
+        display: flex;
+        flex-direction: column;
+        min-height: 380px;
+        padding: 0 16px;
+    }
+
+    .delivery_method_info_item {
+        max-width: 288px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .delivery_method_info .category {
+        width: inherit;
+        padding: 0;
+    }
+
+    .delivery_method_info .category .category_title {
+        max-width: 288px;
+    }
+
+    .more_info_item {
+        position: relative;
+        right: 0;
+        max-width: 288px;
+        padding: 0;
+    }
+
+    .more_info_text {
+        max-width: 288px;
+        top: 0;
     }
 
 }

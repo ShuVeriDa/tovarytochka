@@ -32,8 +32,9 @@ main {
         width: 100%;
         max-width: 320px;
         height: 2718px;
-        padding: 0 16px;
+        padding: 0;
         position: relative;
+        box-sizing: border-box;
         bottom: 10px;
         gap: 32px;
     }
