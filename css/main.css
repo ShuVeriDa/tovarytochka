@@ -20,14 +20,18 @@ main {
     body {
         width: 100%;
         max-width: 320px;
-        min-height: 2933px;
+        min-height: 2000px;
+        /*min-height: 2933px;*/
     }
     main {
         display: flex;
         flex-direction: column;
         width: 100%;
         max-width: 320px;
-        height: 2718px;
+        min-height: initial;
+        max-height: initial;
+        /*min-height: auto;*/
+        /*max-height: none;*/
         padding: 0;
         position: relative;
         box-sizing: border-box;

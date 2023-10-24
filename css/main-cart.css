@@ -469,7 +469,7 @@
 
 
 .favorite_remove_icons {
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 56px;
     height: 20px;
@@ -650,6 +650,10 @@
         display: flex;
         width: 100%;
         max-width: 288px;
+        height: 100%;
+        min-height: initial;
+        max-height: 2298px;
+
         gap: 16px;
     }
 
@@ -668,6 +672,7 @@
     }
 
     .cart_main {
+        max-height: initial;
         gap: 48px;
         position: relative;
         bottom: 7px;
@@ -933,7 +938,6 @@
     .favorite_remove {
         width: inherit;
         justify-content: center;
-
     }
 
     .favorite_remove_icons {
@@ -972,7 +976,7 @@
 
     .order_size {
         position: absolute;
-        bottom: 2px;
+        bottom: -10px;
         left: -92px;
         background: #FFFFFF;
         width: 22px;

@@ -41,5 +41,9 @@
         position: relative;
         bottom: 32px;
     }
+
+    .footer {
+        margin-top: 25px;
+    }
 }
 

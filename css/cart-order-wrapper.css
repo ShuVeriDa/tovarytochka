@@ -472,6 +472,11 @@
         min-height: 605px;
     }
 
+    .cart_order {
+        top: 0px;
+        left: 4px;
+    }
+
     .cart_item {
         position: relative;
         top: 1px;
@@ -483,6 +488,10 @@
 
     .total_price .total_count {
         letter-spacing: -0.50px;
+    }
+
+    .total_count {
+        left: 8px;
     }
 
     .delivery_address .title {
@@ -568,7 +577,8 @@
 @media screen and (max-width: 320px) {
    .cart_order_wrapper {
        position: relative;
-       top: 490px;
+       /*top: 490px;*/
+       top: 0;
        width: 100%;
        max-width: 320px;
        min-height: 378px;
@@ -636,6 +646,8 @@
 
     .cart_order {
         position: relative;
+        top: -2px;
+        left: 4px;
     }
 
     .cart_item {
@@ -654,6 +666,8 @@
     }
 
     .delivery_container .return_delivery .free_delivery {
+        position: relative;
+        top: 3px;
         max-width: 242px;
     }
 

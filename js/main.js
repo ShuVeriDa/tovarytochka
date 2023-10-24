@@ -2,7 +2,7 @@ const favoriteSvg = document.querySelector('.favorite svg');
 const removeSvg = document.querySelector('.remove svg');
 const countLeft = document.querySelector('.count_left');
 const addedCartEl = document.querySelectorAll('.added_cart');
-const favoriteRemoveEl = document.querySelectorAll('.favorite_remove');
+const favoriteRemoveEl = document.querySelectorAll('.favorite_remove_icons');
 const arrowDownEl = document.querySelector('.choose_all .arrow_down');
 const arrowUpEl = document.querySelector('.choose_all .arrow_up');
 const addedCartItems = document.querySelectorAll('.in_stock_wrapper .added_cart');
@@ -104,5 +104,25 @@ if (document.body.offsetWidth <= 320) {
 } if (document.body.offsetWidth > 320) {
   updatingElementsForWeb()
 }
+
+function reloadPage() {
+  location.reload();
+}
+
+// Проверка ширины экрана и выполнение обновления при необходимости
+function checkScreenWidth() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth === 320) {
+    reloadPage(); // Обновляем при ширине <= 320px
+  } else if (screenWidth === 1024) {
+    reloadPage(); // Обновляем при ширине <= 1024px
+  } else if (screenWidth === 1400) {
+    reloadPage(); // Обновляем при ширине <= 1400px
+  }
+}
+
+// Слушаем событие изменения размера окна
+window.addEventListener('resize', checkScreenWidth);
 
 
