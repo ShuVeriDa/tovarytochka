@@ -10,7 +10,7 @@ const chooseAllText = document.querySelector('.choose_all_text span');
 const arrowDownElNotAvailable = document.querySelector('.not_available_header .arrow_down');
 const arrowUpElNotAvailable = document.querySelector('.not_available_header .arrow_up');
 const addedCartItemsNotAvailable = document.querySelectorAll('.not_available_items .added_cart');
-
+const emailLabel = document.querySelector('.mail label');
 
 favoriteSvg.addEventListener('mouseenter', () => {
   countLeft.style.color = '#f55123';
@@ -82,16 +82,27 @@ arrowDownElNotAvailable.addEventListener('click', function () {
   });
 });
 
-// перемещение cartHeaders в
-if (document.body.offsetWidth <= 320) {
-  // Получаем все элементы с классом "cart_header"
+const updatingElementsForMobile = () => {
+  emailLabel.textContent = 'Электронная почта'
   const addedCartPrice = document.querySelectorAll('.added_cart_price ');
 
-  // Получаем элемент с классом "choose_all_text"
   const orderInfoComponent = document.querySelectorAll('.order_info_component');
 
-  // Перемещаем каждый элемент с классом "cart_header" в "choose_all_text"
   addedCartPrice.forEach((header, index) => {
     orderInfoComponent[index].insertAdjacentElement('afterbegin', header);
   });
 }
+
+const updatingElementsForWeb = () => {
+  const emailLabel = document.querySelector('.mail label');
+  emailLabel.textContent = 'Почта'
+}
+
+
+if (document.body.offsetWidth <= 320) {
+  updatingElementsForMobile()
+} if (document.body.offsetWidth > 320) {
+  updatingElementsForWeb()
+}
+
+
