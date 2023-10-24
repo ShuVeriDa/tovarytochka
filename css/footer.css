@@ -30,7 +30,7 @@
     top: 0px;
     width: inherit;
     height: 24px;
-    border-radius: 0 0 24px 24px; /* Обратная форма закругления */
+    border-radius: 0 0 24px 24px;
     display: block;
     background: rgba(246, 246, 250, 1);
 }
@@ -40,16 +40,6 @@
     footer {
         position: relative;
         bottom: 32px;
-        /*display: none;*/
     }
-    /*body {*/
-    /*    position: relative;*/
-    /*}*/
-
-    /*footer {*/
-    /*    position: relative;*/
-    /*    bottom: 0;*/
-    /*    !*display: none;*!*/
-    /*}*/
 }
 
