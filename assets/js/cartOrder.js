@@ -18,15 +18,30 @@ function formatNumberWithSpaces(number) {
 
 function updateTotalPrice() {
   const checkboxes = document.querySelectorAll('.in_stock_wrapper .checkbox_item input[type="checkbox"]');
-  const cartCount = document.querySelectorAll('.cart_count div')
+  const cartCount = document.querySelectorAll('.cart_svg .cart_count div')
+  const deliveryOrderImg = document.querySelectorAll('#deliveryInfoItem3 .cart_count div')
+  const addedCarts = document.querySelectorAll('.added_cart .counter .count')
 
   let quantityProduct = checkboxes.length
   let totalPrice = 0;
   let totalOldPrice = 0;
   let countOrder = 0
 
+
   cartCount.forEach(count => {
     count.textContent = quantityProduct.toString()
+  })
+
+  addedCarts.forEach((added, index) => {
+    if (index < deliveryOrderImg.length) {
+      deliveryOrderImg[index].textContent = added.textContent;
+
+      if (added?.textContent === '0' || added?.textContent === '1') {
+        deliveryOrderImg[index].style.display = 'none'
+      } else {
+        deliveryOrderImg[index].style.display = 'flex'
+      }
+    }
   })
 
 
@@ -87,7 +102,7 @@ function updateTotalPrice() {
   }
 
   if (arrowUpElement.style.display === 'none') {
-    if(countOrder < 5) {
+    if (countOrder < 5) {
       chooseAllText.textContent = `${countOrder} товара · ${formattedPrice} сом`
     } else {
       chooseAllText.textContent = `${countOrder} товаров · ${formattedPrice} сом`

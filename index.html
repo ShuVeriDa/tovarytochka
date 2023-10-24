@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="header_cart">
-                    <div class="header_cart_icon">
+                    <div class="cart_svg">
                         <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                   d="M10.2214 15.4665C10.3829 15.9206 10.8452 16.1949 11.3212 16.119L24.0874 14.0828C24.5004 14.017 24.8288 13.701 24.9106 13.2909L26.2654 6.49865C26.3875 5.88644 25.925 5.31324 25.3008 5.30317L7.94122 5.02324C7.24354 5.01199 6.74913 5.70067 6.98289 6.35812L10.2214 15.4665Z"
@@ -182,7 +182,7 @@
                         </div>
                     </div>
                     <!--first item-->
-                    <div class="added_cart">
+                    <div class="added_cart" id="addedСart1">
                         <div class="added_cart_item">
                             <div class="checkbox_image">
                                 <div class="checkbox_item">
@@ -329,7 +329,7 @@
                         </div>
                     </div>
                     <!--second item-->
-                    <div class="added_cart">
+                    <div class="added_cart" id="addedСart2">
                         <div class="added_cart_item">
                             <div class="checkbox_image">
                                 <div class="checkbox_item">
@@ -474,9 +474,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div >
                     <!--third item-->
-                    <div class="added_cart">
+                    <div class="added_cart" id="addedСart3">
                         <div class="added_cart_item">
                             <div class="checkbox_image">
                                 <div class="checkbox_item">
@@ -1017,7 +1017,7 @@
                                 <div class="change"><h4>Изменить</h4></div>
                             </div>
                             <div class="delivery_method_info">
-                                <div class="delivery_method_info_item">
+                                <div class="delivery_method_info_item" id="deliveryInfoItem1">
                                     <div class="category">
                                         <div class="category_title">Пункт выдачи</div>
                                     </div>
@@ -1041,7 +1041,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="delivery_method_info_item">
+                                <div class="delivery_method_info_item" id="deliveryInfoItem2">
                                     <div class="category">
                                         <div class="category_title">Стоимость доставки</div>
                                     </div>
@@ -1065,22 +1065,25 @@
                                         <!--                                        </div>-->
                                     </div>
                                 </div>
-                                <div class="delivery_method_info_item date">
+                                <div class="delivery_method_info_item date" id="deliveryInfoItem3">
                                     <div class="category">
                                         <div class="category_title">5—6 февраля</div>
                                     </div>
                                     <div class="more_info_item">
                                         <div class="more_info_text img_component">
-                                            <div class="delivery_order_img">
+                                            <div class="delivery_order_img" id="deliveryOrder1">
                                                 <img src="assets/images/img.png" alt="">
+                                                <div class="cart_count">
+                                                    <div>184</div>
+                                                </div>
                                             </div>
-                                            <div class="delivery_order_img">
+                                            <div class="delivery_order_img" id="deliveryOrder2">
                                                 <img src="assets/images/img_1.png" alt="">
                                                 <div class="cart_count">
                                                     <div>184</div>
                                                 </div>
                                             </div>
-                                            <div class="delivery_order_img">
+                                            <div class="delivery_order_img" id="deliveryOrder3">
                                                 <img src="assets/images/img_2.png" alt="">
                                                 <div class="cart_count">
                                                     <div>2</div>
@@ -1089,7 +1092,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="delivery_method_info_item date">
+                                <div class="delivery_method_info_item date" id="deliveryInfoItem4">
                                     <div class="category">
                                         <div class="category_title">7—8 февраля</div>
                                     </div>
@@ -1643,7 +1646,7 @@
                     <div class="modal_delivery_address">
                         <div class="variant_address_item">
                             <div class="modal_delivery_radio">
-                                <input class="modal_delivery_input" type="radio" id="delivery1" name="delivery_method"/>
+                                <input class="modal_delivery_input" type="radio" id="delivery1" onselect name="delivery_method"/>
                             </div>
                             <div class="variant_address_item_info">
                                 <div class="pick_up_point">

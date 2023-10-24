@@ -162,7 +162,7 @@ header {
     right: 20px;
 }
 
-.profile_inner, .header_cart_icon {
+.profile_inner, .cart_svg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +185,7 @@ header {
     left: 2px;
 }
 
-.header_cart_icon {
+.cart_svg {
     position: relative;
     right: 1px;
     bottom: 1px;
