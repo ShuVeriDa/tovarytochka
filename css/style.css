@@ -33,6 +33,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 320px) {
+    body {
+
+        min-height: 2933px;
+    }
+    main {
+        min-height: 2718px;
+    }
     .wrapper {
         width: 320px;
         gap: 0;

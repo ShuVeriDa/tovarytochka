@@ -1,0 +1,41 @@
+.tab_bar {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .tab_bar {
+        position: relative;
+        bottom: 32px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        max-width: 320px;
+        height: 56px;
+        /*padding: 0 13px;*/
+        background: #FFFFFF;
+        box-shadow: 0px -0.5px 0px 0px #0000004D;
+    }
+
+    .main_svg,
+    .search_svg,
+    .cart_svg,
+    .favorites_svg,
+    .profile_svg {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cart_svg {
+        position: relative;
+    }
+
+    .cart_svg .cart_count {
+        position: absolute;
+        top: 7px;
+    }
+
+}

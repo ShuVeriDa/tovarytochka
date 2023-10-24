@@ -37,8 +37,19 @@
 
 
 @media screen and (max-width: 320px) {
-  footer {
-      display: none;
-  }
+    footer {
+        position: relative;
+        bottom: 32px;
+        /*display: none;*/
+    }
+    /*body {*/
+    /*    position: relative;*/
+    /*}*/
+
+    /*footer {*/
+    /*    position: relative;*/
+    /*    bottom: 0;*/
+    /*    !*display: none;*!*/
+    /*}*/
 }
 
