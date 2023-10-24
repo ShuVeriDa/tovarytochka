@@ -18,11 +18,17 @@ function formatNumberWithSpaces(number) {
 
 function updateTotalPrice() {
   const checkboxes = document.querySelectorAll('.in_stock_wrapper .checkbox_item input[type="checkbox"]');
+  const cartCount = document.querySelectorAll('.cart_count div')
 
+  let quantityProduct = checkboxes.length
   let totalPrice = 0;
   let totalOldPrice = 0;
   let countOrder = 0
-  let quantityProduct = checkboxes.length
+
+  cartCount.forEach(count => {
+    count.textContent = quantityProduct.toString()
+  })
+
 
   checkboxes.forEach(checkbox => {
     if (checkbox.checked) {
