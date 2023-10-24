@@ -197,6 +197,10 @@ header {
         max-width: 1024px;
     }
 
+    .logo span {
+        letter-spacing: 1.65px;
+    }
+
     .search {
         width: 100%;
         max-width: 594px;

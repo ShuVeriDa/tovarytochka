@@ -608,6 +608,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+    .choose_all_text span {
+        right: 1.5px;
+    }
+
     .cart {
         width: 100%;
         max-width: 640px;
@@ -615,7 +620,8 @@
 
     .order_info_component {
         position: relative;
-        left: 2px;
+        left: 5px;
+        top: 0;
     }
 
     .choose_all_arrow .choose_all_text {
@@ -634,6 +640,10 @@
         position: relative;
         left: 0px;
         bottom: 1px;
+    }
+
+    .count_left {
+        letter-spacing: 0.2px;
     }
 }
 

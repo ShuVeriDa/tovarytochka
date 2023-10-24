@@ -463,6 +463,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+
     .cart_order_wrapper {
         width: 100%;
         max-width: 303px;
@@ -496,6 +497,11 @@
 
     .delivery_address .title {
         letter-spacing: -0.10px;
+        font-size: 14px;
+    }
+
+    .card_number.payment, .credit_card_expiration {
+        letter-spacing: 0.2px;
     }
 
     .delivery_container .return_delivery {
@@ -538,12 +544,12 @@
 
 
     .debiting_immediately .text {
-        letter-spacing: -0.2px;
+        letter-spacing: 0;
     }
 
 
     .write-off-payment .info_debiting {
-        letter-spacing: -0.1px;
+        letter-spacing: 0;
     }
 
     .order_btn_wrapper .order_btn,
@@ -613,7 +619,6 @@
     .total_price .total_count, .total_title {
         letter-spacing: 0;
     }
-
 
 
     .total_title,

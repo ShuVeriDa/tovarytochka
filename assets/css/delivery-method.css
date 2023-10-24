@@ -188,6 +188,14 @@
         bottom: 1px;
     }
 
+    .delivery_pay_method_header .text h2 {
+        letter-spacing: 0px;
+    }
+
+    .delivery_method_info .category .category_title {
+        letter-spacing: 0.3px;
+    }
+
     .more_info_item {
         position: relative;
         bottom: 1px;
@@ -195,9 +203,9 @@
 
     .more_info_item .more_info_text,
     .more_info_item .more_info_text.img_component {
-        letter-spacing: -0.15px;
+        letter-spacing: 0px;
         position: relative;
-        right: 1px;
+        right: 0;
     }
 
     .more_info_item .working_hours {
@@ -206,12 +214,16 @@
     }
 
     .working_hours .working_hours_text {
-        letter-spacing: -0.15px;
+        letter-spacing: 0;
     }
 
     .return_delivery .del_meth {
         position: relative;
         top: 10px;
+    }
+
+    .free_delivery.del_meth {
+        letter-spacing: 0px;
     }
 
 }
