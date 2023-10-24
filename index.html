@@ -1189,25 +1189,30 @@
                                     <div class="name">
                                         <input type="text" id="name" placeholder=""/>
                                         <label for="name" class="placeholder">Имя</label>
+                                        <div class="error_title"></div>
                                     </div>
                                     <div class="surname">
                                         <input type="text" id="surname" placeholder=""/>
                                         <label for="surname" class="placeholder">Фамилия</label>
+                                        <div class="error_title"></div>
                                     </div>
                                 </div>
                                 <div class="form_to_fill_container">
                                     <div class="mail">
-                                        <input type="text" id="email" placeholder=""/>
+                                        <input type="email" id="email" placeholder=""/>
                                         <label for="email" class="placeholder">Почта</label>
+                                        <div class="error_title"></div>
                                     </div>
                                     <div class="phone">
-                                        <input type="text" id="phone" placeholder=""/>
+                                        <input type="tel" id="phone" placeholder=""/>
                                         <label for="phone" class="placeholder">Телефон</label>
+                                        <div class="error_title"></div>
                                     </div>
                                     <div class="inn">
                                         <input type="text" id="inn" placeholder=""/>
                                         <label for="inn" class="placeholder">ИНН</label>
                                         <div class="under_input">Для таможенного оформления</div>
+                                        <div class="error_title"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1401,7 +1406,7 @@
                 </div>
                 <div class="order_btn_wrapper">
                     <div class="order_btn">
-                        <button>
+                        <button type="submit">
                             <span id="payBtn">Заказать</span>
                         </button>
                     </div>

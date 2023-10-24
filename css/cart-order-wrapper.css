@@ -387,6 +387,7 @@
 }
 
 .order_btn button {
+    cursor: pointer;
     width: 100%;
     max-width: 381px;
     height: 44px;

@@ -113,6 +113,47 @@
     line-height: 14px;
 }
 
+/*error*/
+.error {
+    color: #F55123;
+}
+
+.error_title {
+    display: none;
+    position: absolute;
+    top: 35px;
+    color: #F55123;
+    width: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.form_to_fill_container label.error {
+    color: #F55123;
+}
+
+.form_to_fill_container .name.error::after,
+.form_to_fill_container .surname.error::after,
+.form_to_fill_container .mail.error::after,
+.form_to_fill_container .phone.error::after,
+.form_to_fill_container .inn.error::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    display: block;
+    width: inherit;
+    height: 1px;
+    background: #F55123;
+}
+
+.inn .error_title {
+    position: absolute;
+    top: 55px;
+}
+
+/*___*/
+
 @media screen and (max-width: 1024px) {
     .form_to_fill_container input {
         position: relative;
