@@ -11,7 +11,9 @@ removeOrderButton.forEach((removeButton, index) => {
     const variantAddressItem = this.closest(".added_cart");
     if (variantAddressItem) {
       variantAddressItem.remove();
-      deliveryOrderImg[index].remove()
+      if (index < deliveryOrderImg.length) {
+        deliveryOrderImg[index].remove()
+      }
 
       if (moreInfoText.children.length === 0) {
        deliveryInfoItem.remove()
