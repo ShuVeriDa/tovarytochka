@@ -147,7 +147,8 @@
 
 .delivery_date {
     position: relative;
-    bottom: 3px;
+    bottom: 1px;
+    /*bottom: 3px;*/
     /*min-height: 17px;*/
     display: flex;
     gap: 1px;
@@ -306,7 +307,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.4px;
+    /*letter-spacing: 0.4px;*/
+    letter-spacing: 0;
 }
 
 .card_icon {
@@ -512,7 +514,8 @@
     .delivery_container .return_delivery .free_delivery {
         width: 100%;
         max-width: 209px;
-        letter-spacing: -0.2px;
+        letter-spacing: 0px;
+        /*letter-spacing: -0.2px;*/
     }
 
     .return_delivery.del_meth {
@@ -534,13 +537,15 @@
     }
 
     .card_number {
-        letter-spacing: 0.3px;
+        letter-spacing: 0.1px;
     }
 
     .write-off-payment {
         position: relative;
         bottom: 2px;
     }
+
+
 
 
     .debiting_immediately .text {
@@ -591,6 +596,10 @@
 
    }
 
+    .delivery_container .return_delivery .free_delivery {
+
+    }
+
     .cart_order_wrapper .container {
         width: inherit;
         max-width: 320px;
@@ -617,7 +626,7 @@
         max-width: 288px;
     }
     .total_price .total_count, .total_title {
-        letter-spacing: 0;
+        letter-spacing: 0.4px;
     }
 
 
@@ -674,6 +683,7 @@
         position: relative;
         top: 3px;
         max-width: 242px;
+        letter-spacing: 0;
     }
 
     .write-off-payment {
